@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name                    = 'FanView'
-    s.version                 = '0.1.0'
+    s.version                 = '0.1.1'
     s.summary                 = 'MyDemoSDK pod app'
     s.homepage                = 'https://github.com/shamshad007/FnatasticView'
     s.author                  = { 'shamshad007' => 'md.akhtar1993@gmail.com' }
