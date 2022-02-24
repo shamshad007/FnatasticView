@@ -8,7 +8,6 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/shamshad007/FnatasticView.git',:tag => 's.version.to_s' }
   
   s.source_files = 'MyDemoSDK/**/*.swift'
-  s.requires_arc            = true
   s.ios.deployment_target   = '13.0'
   s.swift_version           = '4.2'
 
