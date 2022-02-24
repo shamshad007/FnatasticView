@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.author           = { 'shamshad007' => 'md.akhtar1993@gmail.com' }
   s.license          = { :type => 'TOPSECRET', :file => 'LICENSE' }
   s.source           = { :git => 'https://github.com/shamshad007/FnatasticView.git',:tag => 's.version.to_s' }
-  s.platform = :ios
+  
   s.source_files = 'MyDemoSDK/**/*.swift'
   s.requires_arc            = true
   s.ios.deployment_target   = '13.0'
