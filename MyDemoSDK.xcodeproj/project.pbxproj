@@ -10,8 +10,8 @@
 		B8208E3B27A8187900D8A861 /* MyDemoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8208E3127A8187900D8A861 /* MyDemoSDK.framework */; };
 		B8208E4027A8187900D8A861 /* MyDemoSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8208E3F27A8187900D8A861 /* MyDemoSDKTests.swift */; };
 		B8208E4227A8187900D8A861 /* MyDemoSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = B8208E3427A8187900D8A861 /* MyDemoSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B8208E4C27A8191A00D8A861 /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8208E4B27A8191A00D8A861 /* HelloWorld.swift */; };
 		B88FFF9127AA570F00E83547 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88FFF9027AA570F00E83547 /* ViewController.swift */; };
+		B8E905B627C8A1DB0060F141 /* FantasticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E905B527C8A1DB0060F141 /* FantasticView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +31,8 @@
 		B8208E3A27A8187900D8A861 /* MyDemoSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyDemoSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8208E3F27A8187900D8A861 /* MyDemoSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDemoSDKTests.swift; sourceTree = "<group>"; };
 		B8208E4127A8187900D8A861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B8208E4B27A8191A00D8A861 /* HelloWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld.swift; sourceTree = "<group>"; };
 		B88FFF9027AA570F00E83547 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B8E905B527C8A1DB0060F141 /* FantasticView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FantasticView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +75,9 @@
 		B8208E3327A8187900D8A861 /* MyDemoSDK */ = {
 			isa = PBXGroup;
 			children = (
+				B8E905B527C8A1DB0060F141 /* FantasticView.swift */,
 				B8208E3427A8187900D8A861 /* MyDemoSDK.h */,
 				B8208E3527A8187900D8A861 /* Info.plist */,
-				B8208E4B27A8191A00D8A861 /* HelloWorld.swift */,
 				B88FFF9027AA570F00E83547 /* ViewController.swift */,
 			);
 			path = MyDemoSDK;
@@ -202,7 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B88FFF9127AA570F00E83547 /* ViewController.swift in Sources */,
-				B8208E4C27A8191A00D8A861 /* HelloWorld.swift in Sources */,
+				B8E905B627C8A1DB0060F141 /* FantasticView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +359,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = MyDemoSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -367,9 +368,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Codebuzzers.MyDemoSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -385,6 +387,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = MyDemoSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -393,8 +396,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Codebuzzers.MyDemoSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
